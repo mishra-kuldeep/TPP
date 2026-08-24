@@ -1,838 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Purpose Project — Reignite. Realign. Rise.</title>
-<meta name="description" content="The Purpose Project is a career clarity and coaching practice built on empathy first, trust before transaction, and growth through clarity.">
-
-<!-- Favicon -->
-<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
-<link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
-<link rel="apple-touch-icon" href="images/favicon-192.png">
-
-<!-- Bootstrap -->
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<!-- Site styles -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Purpose Project — Homepage Concept</title>
+<link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- ============ NAVBAR ============ -->
-<nav class="tpp-nav" id="tppNav">
-  <div class="container-tpp">
-    <a href="#home" class="brand">
-      <img src="images/logo-mark.png" alt="The Purpose Project mark">
-      <span class="brand-word">
-        <span class="t1">The Purpose Project</span>
-        <span class="t2">REIGNITE &nbsp;·&nbsp; REALIGN &nbsp;·&nbsp; RISE</span>
-      </span>
+<header>
+  <nav class="wrap">
+    <a href="./index.html" class="brand">
+        <img src="images/logo-icon.png" alt="The Purpose Project mark" />
+        <div class="brand-text"><b>THE PURPOSE</b><span>PROJECT</span></div>
     </a>
-
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#our-story">Our Story</a></li>
-      <li><a href="#how-we-help">How We Help</a></li>
-      <li><a href="#resources">Resources</a></li>
-      <li><a href="#founder">Meet the Founder</a></li>
-    </ul>
-
+    <div class="navlinks">
+      <a href="#story">Our Story</a>
+      <a href="#help">How We Help</a>
+      <a href="#founder">Founder</a>
+      <a href="#connect">Contact</a>
+    </div>
     <div class="nav-cta">
-      <a href="#connect" class="btn-tpp btn-gold d-none d-lg-inline-flex">
-        Let's Connect
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-      <button class="nav-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#tppOffcanvas" aria-controls="tppOffcanvas" aria-label="Open menu">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-      </button>
+      <a class="btn btn-secondary" href="./book-a-career-conversation.html">Book a Discovery Call</a>
     </div>
-  </div>
-</nav>
-
-<!-- Mobile offcanvas menu -->
-<div class="offcanvas offcanvas-end tpp-offcanvas" tabindex="-1" id="tppOffcanvas">
-  <div class="offcanvas-header">
-    <img src="images/logo-mark.png" alt="" style="height:32px;">
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <ul class="nav-links">
-      <li><a href="#home" data-bs-dismiss="offcanvas">Home</a></li>
-      <li><a href="#our-story" data-bs-dismiss="offcanvas">Our Story</a></li>
-      <li><a href="#how-we-help" data-bs-dismiss="offcanvas">How We Help</a></li>
-      <li><a href="#resources" data-bs-dismiss="offcanvas">Resources</a></li>
-      <li><a href="#founder" data-bs-dismiss="offcanvas">Meet the Founder</a></li>
-      <li><a href="#connect" class="btn-tpp btn-gold" data-bs-dismiss="offcanvas">Let's Connect</a></li>
-    </ul>
-  </div>
-</div>
-
-<!-- ============ HERO ============ -->
-<header class="hero" id="home">
-  <div class="container-tpp">
-    <div class="hero-inner">
-      <span class="eyebrow">Reignite &nbsp;·&nbsp; Realign &nbsp;·&nbsp; Rise</span>
-      <h1>Feel understood,<br><em>before</em> you're advised.</h1>
-      <p class="hero-sub">The Purpose Project is a space for people rebuilding their career story — with empathy first, honest clarity, and a plan you can actually trust. No jargon. No pressure. Just direction.</p>
-      <div class="hero-actions">
-        <a href="#connect" class="btn-tpp btn-gold">
-          Book a Discovery Call
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <a href="#how-we-help" class="btn-tpp btn-outline">Find Your Direction</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Signature motif: line-art tree, echoing the brand mark -->
-  <!-- <div class="hero-mark" aria-hidden="true">
-    <svg viewBox="0 0 600 420" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="heroGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stop-color="#C9A66B"/>
-          <stop offset="50%" stop-color="#A9762F"/>
-          <stop offset="100%" stop-color="#6E4A1A"/>
-        </linearGradient>
-      </defs>
-
-      <g class="tpp-draw">
-        <path d="M300 190 C300 240 300 260 300 300"/>
-        <path d="M300 300 C270 320 230 330 170 328"/>
-        <path d="M300 300 C330 320 370 330 430 328"/>
-        <path d="M300 300 C285 330 260 350 215 372"/>
-        <path d="M300 300 C315 330 340 350 385 372"/>
-        <path d="M300 300 C300 335 300 355 300 385"/>
-        <path d="M300 300 C292 328 270 345 235 355"/>
-        <path d="M300 300 C308 328 330 345 365 355"/>
-      </g>
-
-      <g class="tpp-draw">
-        <path d="M300 190 C298 150 260 120 210 95"/>
-        <path d="M300 190 C302 150 340 120 390 95"/>
-        <path d="M300 190 C299 130 300 90 300 40"/>
-        <path d="M210 95 C185 85 160 82 130 88"/>
-        <path d="M390 95 C415 85 440 82 470 88"/>
-        <path d="M210 95 C195 70 190 50 195 25"/>
-        <path d="M390 95 C405 70 410 50 405 25"/>
-      </g>
-      <circle class="tpp-fill" cx="300" cy="205" r="13"/>
-    </svg>
-  </div> -->
-  <div class="hero-fade"></div>
+  </nav>
 </header>
 
-<!-- ============ VALUES STRIP ============ -->
-<section class="values-strip">
-  <div class="container-tpp">
-    <div class="values-row">
-
-      <div class="value-item">
-        <span class="glyph">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 20s-7-4.4-9.3-9C1.2 7.7 3 4.5 6.3 4.2c2-.2 3.6 1 4.7 2.6C12.1 5.2 13.7 4 15.7 4.2c3.3.3 5.1 3.5 3.6 6.8C17 15.6 12 20 12 20z"/>
-          </svg>
-        </span>
-        <h4>Empathy First</h4>
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy reveal">
+      <p class="eyebrow">Reignite &nbsp;·&nbsp; Realign &nbsp;·&nbsp; Rise</p>
+      <h1>Every career has a purpose. <em>Let's help you find yours.</em></h1>
+      <p class="lead">It's okay to feel unsure — whether you're starting out, seeking your next move, or restarting after a break.</p>
+      <p class="support">The Purpose Project exists to bring clarity, confidence, and direction to every step of your journey.</p>
+      <div class="hero-cta">
+        <a class="btn btn-secondary" href="./book-a-career-conversation.html">Book a Discovery Call</a>
+        <a class="btn btn-secondary" href="#connect">Chat on WhatsApp</a>
       </div>
-
-      <div class="value-item">
-        <span class="glyph">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 3l7 3v5c0 4.6-3 8.4-7 10-4-1.6-7-5.4-7-10V6l7-3z"/>
-            <path d="M9 12l2 2 4-4"/>
-          </svg>
-        </span>
-        <h4>Trust Before Transaction</h4>
-      </div>
-
-      <div class="value-item">
-        <span class="glyph">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="9"/>
-            <path d="M15 9l-4.2 2.8L9 16l4.2-2.8L15 9z"/>
-          </svg>
-        </span>
-        <h4>Purpose Driven</h4>
-      </div>
-
-      <div class="value-item">
-        <span class="glyph">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 20V13"/>
-            <path d="M10 20V9"/>
-            <path d="M16 20V5"/>
-            <path d="M4 13l6-4 6-4"/>
-          </svg>
-        </span>
-        <h4>Growth Through Clarity</h4>
-      </div>
-
-      <div class="value-item">
-        <span class="glyph">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="8.5" cy="9" r="3.2"/>
-            <path d="M3.5 19c0-3 2.2-5.2 5-5.2s5 2.2 5 5.2"/>
-            <path d="M15.5 5.3c1.3.4 2.2 1.6 2.2 3s-.9 2.6-2.2 3"/>
-            <path d="M14.8 13.8c2.4.4 4.2 2.4 4.2 4.9"/>
-          </svg>
-        </span>
-        <h4>Professional yet Human</h4>
-      </div>
-
+      <p class="hero-note">"We're here to help you move forward — with confidence, clarity, and purpose."</p>
     </div>
-  </div>
-</section>
-
-<!-- ============ OUR STORY / ABOUT ============ -->
-<section class="about-section" id="our-story">
-  <div class="container-tpp">
-    <div class="about-grid">
-
-      <div class="about-visual reveal">
-        <div class="ring"></div>
-        <img src="images/logo-mark.png" alt="The Purpose Project — tree mark, symbolising rooted growth">
-      </div>
-
-      <div class="about-copy reveal">
-        <span class="eyebrow">Our Story</span>
-        <h2 style="margin-top:14px;">Careers built on clarity, not chaos.</h2>
-        <span class="lede">"We believe direction is a decision away — but no one should have to find it alone."</span>
-
-        <p>The Purpose Project began with a simple observation: most career advice starts with a template, not a conversation. We wanted to build something different — a practice where you're understood as a person first, and guided as a professional second.</p>
-        <p>Every programme we design sits on the same foundation: listen deeply, remove the noise, and help you see the direction that was already yours to take.</p>
-
-        <div class="pillars">
-          <div class="pillar">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.4 5.5 6 .6-4.5 4 1.3 5.9L12 16l-5.2 3 1.3-5.9-4.5-4 6-.6L12 3z"/></svg>
-            <span><strong>Our Vision</strong><br>A world where career decisions come from clarity, not fear.</span>
-          </div>
-          <div class="pillar">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
-            <span><strong>Our Mission</strong><br>To guide every individual toward work that fits who they are.</span>
-          </div>
-          <div class="pillar">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.4-9.3-9C1.2 8.7 3 5.5 6.3 5.2c2-.2 3.6 1 4.7 2.6 1.1-1.6 2.7-2.8 4.7-2.6 3.3.3 5.1 3.5 3.6 6.8C18 16.6 12 21 12 21z"/></svg>
-            <span><strong>Who We Serve</strong><br>Students, professionals and women navigating a career reset.</span>
-          </div>
-          <div class="pillar">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V13M10 20V9M16 20V5"/></svg>
-            <span><strong>How We Work</strong><br>1:1 coaching, honest feedback, and a plan built around you.</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<div class="root-divider" aria-hidden="true">
-  <svg viewBox="0 0 300 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M0 12h90 M115 12l10-8 10 8-10 8-10-8 M145 12h20 M170 12l10-8 10 8-10 8-10-8 M210 12h90"/></svg>
-</div>
-
-<!-- ============ VISITOR JOURNEY ============ -->
-<section class="journey-section">
-  <div class="container-tpp">
-    <div class="section-head center">
-      <span class="eyebrow" style="justify-content:center;">The Visitor Journey</span>
-      <h2 style="margin-top:14px;">From curiosity to confident action.</h2>
-      <p>Every conversation with The Purpose Project follows the same arc — because clarity is a process, not a moment.</p>
-    </div>
-
-    <div class="journey-track">
-      <div class="j-step">
-        <div class="j-dot">1</div>
-        <h5>Curiosity</h5>
-        <p>You start looking for something more than a job title.</p>
-      </div>
-      <div class="j-step">
-        <div class="j-dot">2</div>
-        <h5>Trust</h5>
-        <p>You feel heard before you're handed a solution.</p>
-      </div>
-      <div class="j-step">
-        <div class="j-dot">3</div>
-        <h5>Clarity</h5>
-        <p>Your strengths and direction start coming into focus.</p>
-      </div>
-      <div class="j-step">
-        <div class="j-dot">4</div>
-        <h5>Confidence</h5>
-        <p>You have a plan — and belief that it's yours to run.</p>
-      </div>
-      <div class="j-step">
-        <div class="j-dot">5</div>
-        <h5>Action</h5>
-        <p>You move forward, with us a call away.</p>
+    <div class="hero-visual">
+      <div class="brand-emblem reveal">
+        <span class="emblem-dot" style="width:6px;height:6px; top:4%; left:18%;"></span>
+        <span class="emblem-dot" style="width:4px;height:4px; top:10%; right:12%; opacity:0.7;"></span>
+        <span class="emblem-diamond" style="width:9px;height:9px; bottom:8%; left:8%;"></span>
+        <span class="emblem-dot" style="width:5px;height:5px; bottom:4%; right:16%; opacity:0.8;"></span>
+        <img src="images/logo-full.png" alt="The Purpose Project" />
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ HOW WE HELP / SERVICES ============ -->
-<section class="services-section" id="how-we-help">
-  <div class="container-tpp">
-    <div class="section-head center">
-      <span class="eyebrow" style="justify-content:center;">How We Help</span>
-      <h2 style="margin-top:14px;">Programmes built around where you stand today.</h2>
-      <p>Tap any card to explore what's included — no new page, no long forms, just the details you need.</p>
+<div class="divider">
+  <svg viewBox="0 0 600 40" xmlns="http://www.w3.org/2000/svg">
+    <line x1="0" y1="20" x2="230" y2="20" stroke="#D9B570" stroke-width="1"/>
+    <line x1="370" y1="20" x2="600" y2="20" stroke="#D9B570" stroke-width="1"/>
+    <path d="M255 20 L275 6 L295 20 L315 34 L335 20" stroke="#B1802E" stroke-width="1.4" fill="none"/>
+    <circle cx="255" cy="20" r="2.6" fill="#B1802E"/>
+    <circle cx="335" cy="20" r="2.6" fill="#B1802E"/>
+  </svg>
+</div>
+
+<section class="bridge">
+  <div class="wrap">
+    <p>"Because The Purpose Project was built from real experience — not just qualifications."</p>
+  </div>
+</section>
+
+<section class="story" id="story">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">Our Story</p>
+      <h2>Because The Purpose Project<br>was born from listening,<br>not theory.</h2>
     </div>
-
-    <div class="service-grid">
-
-      <!-- 1 Career Clarity Program -->
-      <button class="service-card reveal" type="button" data-bs-toggle="modal" data-bs-target="#modal-clarity">
-        <span class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15.2 8.8l-2.6 5.6-5.6 2.6 2.6-5.6 5.6-2.6z"/></svg>
-        </span>
-        <h3>Career Clarity Program</h3>
-        <p>Find the right direction with confidence.</p>
-        <span class="service-more">Learn More
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </span>
-      </button>
-
-      <!-- 2 ATS Resume Building -->
-      <button class="service-card reveal" type="button" data-bs-toggle="modal" data-bs-target="#modal-resume">
-        <span class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4"/><path d="M9.5 13l1.7 1.7L14.5 11"/></svg>
-        </span>
-        <h3>ATS Resume Building</h3>
-        <p>Build a resume that actually gets noticed.</p>
-        <span class="service-more">Learn More
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </span>
-      </button>
-
-      <!-- 3 LinkedIn Optimization -->
-      <button class="service-card reveal" type="button" data-bs-toggle="modal" data-bs-target="#modal-linkedin">
-        <span class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="7" r="2.2"/><circle cx="18" cy="6" r="2.2"/><circle cx="12" cy="18" r="2.2"/><path d="M7.7 8.7L10.5 16M16.3 7.7L13.2 16.3"/></svg>
-        </span>
-        <h3>LinkedIn Optimization</h3>
-        <p>Turn your profile into your best pitch.</p>
-        <span class="service-more">Learn More
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </span>
-      </button>
-
-      <!-- 4 Mock Interview -->
-      <button class="service-card reveal" type="button" data-bs-toggle="modal" data-bs-target="#modal-interview">
-        <span class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h11v8H8l-3 3v-3H3z"/><path d="M21 9h-3M21 12h-3M21 15h-6"/></svg>
-        </span>
-        <h3>Mock Interview</h3>
-        <p>Walk in prepared, walk out confident.</p>
-        <span class="service-more">Learn More
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </span>
-      </button>
-
-      <!-- 5 Career Readiness Program -->
-      <button class="service-card reveal" type="button" data-bs-toggle="modal" data-bs-target="#modal-readiness">
-        <span class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.6-3 8.4-7 10-4-1.6-7-5.4-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
-        </span>
-        <h3>Career Readiness Program</h3>
-        <p>Build the skills companies actually hire for.</p>
-        <span class="service-more">Learn More
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </span>
-      </button>
-
-      <!-- 6 Campus to Corporate -->
-      <button class="service-card reveal" type="button" data-bs-toggle="modal" data-bs-target="#modal-campus">
-        <span class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8l10-4 10 4-10 4-10-4z"/><path d="M6 10.5V15c2 1.3 10 1.3 12 0v-4.5"/><path d="M14 15v5h5v-8"/></svg>
-        </span>
-        <h3>Campus to Corporate</h3>
-        <p>Cross the bridge from classroom to career.</p>
-        <span class="service-more">Learn More
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </span>
-      </button>
-
-      <!-- 7 Career Comeback for Women -->
-      <button class="service-card reveal" type="button" data-bs-toggle="modal" data-bs-target="#modal-comeback">
-        <span class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="2.3"/><path d="M12 9.3v5M12 14.3l-3 5M12 14.3l3 5"/><path d="M4 12a8 8 0 0 1 8-8M20 12a8 8 0 0 1-3 6.2"/><path d="M4 12l2-2M4 12l2 2"/></svg>
-        </span>
-        <h3>Career Comeback for Women</h3>
-        <p>Reignite your career, on your own terms.</p>
-        <span class="service-more">Learn More
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </span>
-      </button>
-
+    <div class="story-copy reveal">
+      <p>The Purpose Project wasn't created inside a boardroom. It was born from years of listening to people who felt confused, overlooked, stuck, or unsure about their next career move.</p>
+      <div class="pull-quote">Behind every resume was a person.<br>Behind every interview was a dream.<br>Behind every career gap was a story waiting to be understood.</div>
+      <p>After years of working in Human Resources and Training &amp; Development, one thing became clear — people don't just need career advice. They need someone who listens before leading.</p>
+      <p>That's why The Purpose Project exists. Not to tell people what to do, but to help them discover what's already possible within themselves.</p>
     </div>
   </div>
 </section>
 
-<!-- ============ SERVICE MODALS ============ -->
-
-<div class="modal fade tpp-modal" id="modal-clarity" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div>
-          <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15.2 8.8l-2.6 5.6-5.6 2.6 2.6-5.6 5.6-2.6z"/></svg></span>
-          <h3 class="modal-title">Career Clarity Program</h3>
-          <div class="modal-subtitle">Find the right direction with confidence.</div>
-        </div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<!-- <section class="vm">
+  <div class="wrap">
+    <div class="grid">
+      <div class="vm-card reveal">
+        <svg class="mark" viewBox="0 0 34 34" fill="none" stroke="#B1802E" stroke-width="1.2"><path d="M17 4L27 17L17 30L7 17Z"/><circle cx="17" cy="17" r="2.4" fill="#B1802E" stroke="none"/></svg>
+        <p class="eyebrow" style="margin-bottom:10px;">Our Vision</p>
+        <h3>We envision a world where every individual makes career decisions with confidence, clarity, and purpose.</h3>
+        <p>We believe careers should never be built on confusion, fear, or pressure. Every individual deserves the confidence to choose a path that aligns with their strengths, aspirations, and potential.</p>
       </div>
-      <div class="modal-body">
-        <div class="modal-block">
-          <span class="m-label">What it is</span>
-          <p>A series of personalised 1:1 sessions to help you rediscover your strengths, values and the direction that genuinely fits you — without the guesswork.</p>
-        </div>
-        <div class="modal-block">
-          <span class="m-label">Who it's for</span>
-          <p>Professionals who feel stuck, directionless, or overwhelmed by too many possible paths.</p>
-        </div>
-        <div class="modal-block">
-          <span class="m-label">What you'll get</span>
-          <ul>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>A personal career clarity roadmap</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Strength & values self-awareness tools</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>A written, actionable next-steps plan</li>
-          </ul>
-        </div>
+      <div class="vm-card reveal">
+        <svg class="mark" viewBox="0 0 34 34" fill="none" stroke="#B1802E" stroke-width="1.2"><circle cx="17" cy="17" r="13"/><circle cx="17" cy="17" r="3" fill="#B1802E" stroke="none"/></svg>
+        <p class="eyebrow" style="margin-bottom:10px;">Our Mission</p>
+        <h3>To empower individuals with the guidance, tools, and confidence to build careers they are proud of.</h3>
+        <p>We combine practical career strategies with personalised guidance to help people make informed decisions, build confidence, and take meaningful action towards their goals.</p>
       </div>
-      <div class="modal-footer">
-        <a href="#connect" class="btn-tpp btn-gold" data-bs-dismiss="modal">Book a Discovery Call
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade tpp-modal" id="modal-resume" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div>
-          <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4"/><path d="M9.5 13l1.7 1.7L14.5 11"/></svg></span>
-          <h3 class="modal-title">ATS Resume Building</h3>
-          <div class="modal-subtitle">Build a resume that actually gets noticed.</div>
-        </div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="modal-block">
-          <span class="m-label">What it is</span>
-          <p>A resume built to pass applicant tracking systems and impress the human reading it next — framed around your real, measurable achievements.</p>
-        </div>
-        <div class="modal-block">
-          <span class="m-label">Who it's for</span>
-          <p>Job seekers whose applications aren't converting into interview calls.</p>
-        </div>
-        <div class="modal-block">
-          <span class="m-label">What you'll get</span>
-          <ul>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>A keyword-optimised, ATS-friendly resume</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>A full formatting & content review</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>One round of guided revisions</li>
-          </ul>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <a href="#connect" class="btn-tpp btn-gold" data-bs-dismiss="modal">Book a Discovery Call
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade tpp-modal" id="modal-linkedin" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div>
-          <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="7" r="2.2"/><circle cx="18" cy="6" r="2.2"/><circle cx="12" cy="18" r="2.2"/><path d="M7.7 8.7L10.5 16M16.3 7.7L13.2 16.3"/></svg></span>
-          <h3 class="modal-title">LinkedIn Optimization</h3>
-          <div class="modal-subtitle">Turn your profile into your best pitch.</div>
-        </div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="modal-block">
-          <span class="m-label">What it is</span>
-          <p>A complete profile audit and rewrite so your LinkedIn presence works as hard as your resume does.</p>
-        </div>
-        <div class="modal-block">
-          <span class="m-label">Who it's for</span>
-          <p>Anyone who wants recruiters, peers and their network to actually notice them.</p>
-        </div>
-        <div class="modal-block">
-          <span class="m-label">What you'll get</span>
-          <ul>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>A rewritten headline & summary</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>A keyword & visibility strategy</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>A visual profile checklist</li>
-          </ul>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <a href="#connect" class="btn-tpp btn-gold" data-bs-dismiss="modal">Book a Discovery Call
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade tpp-modal" id="modal-interview" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div>
-          <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h11v8H8l-3 3v-3H3z"/><path d="M21 9h-3M21 12h-3M21 15h-6"/></svg></span>
-          <h3 class="modal-title">Mock Interview</h3>
-          <div class="modal-subtitle">Walk in prepared, walk out confident.</div>
-        </div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="modal-block">
-          <span class="m-label">What it is</span>
-          <p>Simulated interview rounds with honest, real-time feedback — so the real interview feels familiar, not frightening.</p>
-        </div>
-        <div class="modal-block">
-          <span class="m-label">Who it's for</span>
-          <p>Candidates with upcoming interviews, or anyone carrying interview anxiety.</p>
-        </div>
-        <div class="modal-block">
-          <span class="m-label">What you'll get</span>
-          <ul>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>A recorded mock interview session</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>A structured, honest feedback report</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Practical confidence-building tips</li>
-          </ul>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <a href="#connect" class="btn-tpp btn-gold" data-bs-dismiss="modal">Book a Discovery Call
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade tpp-modal" id="modal-readiness" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div>
-          <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.6-3 8.4-7 10-4-1.6-7-5.4-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span>
-          <h3 class="modal-title">Career Readiness Program</h3>
-          <div class="modal-subtitle">Build the skills companies actually hire for.</div>
-        </div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="modal-block">
-          <span class="m-label">What it is</span>
-          <p>Structured coaching in communication, workplace etiquette and professional readiness for the world beyond study or a career break.</p>
-        </div>
-        <div class="modal-block">
-          <span class="m-label">Who it's for</span>
-          <p>Early professionals preparing to step into structured work environments.</p>
-        </div>
-        <div class="modal-block">
-          <span class="m-label">What you'll get</span>
-          <ul>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>A personal readiness assessment</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Guided skill-building modules</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Real-world practice assignments</li>
-          </ul>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <a href="#connect" class="btn-tpp btn-gold" data-bs-dismiss="modal">Book a Discovery Call
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade tpp-modal" id="modal-campus" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div>
-          <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8l10-4 10 4-10 4-10-4z"/><path d="M6 10.5V15c2 1.3 10 1.3 12 0v-4.5"/><path d="M14 15v5h5v-8"/></svg></span>
-          <h3 class="modal-title">Campus to Corporate</h3>
-          <div class="modal-subtitle">Cross the bridge from classroom to career.</div>
-        </div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="modal-block">
-          <span class="m-label">What it is</span>
-          <p>A guided transition programme that prepares final-year students and fresh graduates for their first real workplace.</p>
-        </div>
-        <div class="modal-block">
-          <span class="m-label">Who it's for</span>
-          <p>Students and graduates about to enter the corporate world for the first time.</p>
-        </div>
-        <div class="modal-block">
-          <span class="m-label">What you'll get</span>
-          <ul>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Focused interview preparation</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Workplace-readiness training</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>A first-90-days guidance plan</li>
-          </ul>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <a href="#connect" class="btn-tpp btn-gold" data-bs-dismiss="modal">Book a Discovery Call
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade tpp-modal" id="modal-comeback" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div>
-          <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="2.3"/><path d="M12 9.3v5M12 14.3l-3 5M12 14.3l3 5"/><path d="M4 12a8 8 0 0 1 8-8M20 12a8 8 0 0 1-3 6.2"/><path d="M4 12l2-2M4 12l2 2"/></svg></span>
-          <h3 class="modal-title">Career Comeback for Women</h3>
-          <div class="modal-subtitle">Reignite your career, on your own terms.</div>
-        </div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="modal-block">
-          <span class="m-label">What it is</span>
-          <p>A supportive relaunch path for women returning to work after a career break, rebuilt around confidence and current market readiness.</p>
-        </div>
-        <div class="modal-block">
-          <span class="m-label">Who it's for</span>
-          <p>Women navigating a return to work after family, health, or any other pause.</p>
-        </div>
-        <div class="modal-block">
-          <span class="m-label">What you'll get</span>
-          <ul>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>One-on-one confidence coaching</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>An updated resume & LinkedIn profile</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Guidance on returnship opportunities</li>
-          </ul>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <a href="#connect" class="btn-tpp btn-gold" data-bs-dismiss="modal">Book a Discovery Call
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ============ RESOURCES / INSIGHTS ============ -->
-<section class="resources-section" id="resources">
-  <div class="container-tpp">
-    <div class="section-head center">
-      <span class="eyebrow" style="justify-content:center;">Resources & Insights</span>
-      <h2 style="margin-top:14px;">Thinking, before doing.</h2>
-      <p>Short reads on clarity, careers and the small shifts that lead to bigger ones.</p>
-    </div>
-
-    <div class="resource-grid">
-
-      <article class="resource-card reveal">
-        <div class="resource-thumb">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5c3-1.5 6-1.5 8 0v13c-2-1.5-5-1.5-8 0V5z"/><path d="M20 5c-3-1.5-6-1.5-8 0v13c2-1.5 5-1.5 8 0V5z"/></svg>
-        </div>
-        <div class="resource-body">
-          <span class="resource-tag">Career Clarity</span>
-          <h4>5 signs you've outgrown your current career path</h4>
-          <p>The quiet cues most professionals miss — and what to do once you notice them.</p>
-          <a href="#" class="resource-link">Read More
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-        </div>
-      </article>
-
-      <article class="resource-card reveal">
-        <div class="resource-thumb">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4"/><path d="M9 12h6M9 15h6M9 9h2"/></svg>
-        </div>
-        <div class="resource-body">
-          <span class="resource-tag">Resume</span>
-          <h4>How to beat the ATS: a practical guide</h4>
-          <p>What applicant tracking systems actually look for, in plain language.</p>
-          <a href="#" class="resource-link">Read More
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-        </div>
-      </article>
-
-      <article class="resource-card reveal">
-        <div class="resource-thumb">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 0 0 16"/></svg>
-        </div>
-        <div class="resource-body">
-          <span class="resource-tag">Career Comeback</span>
-          <h4>Returning to work after a break — where to start</h4>
-          <p>A gentle, practical first step for anyone re-entering the workforce.</p>
-          <a href="#" class="resource-link">Read More
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<!-- ============ MEET THE FOUNDER ============ -->
-<section class="founder-section" id="founder">
-  <div class="container-tpp">
-    <div class="founder-grid">
-
-      <div class="founder-portrait reveal">
-        <!-- TODO (Kuldeep): replace with founder's actual photograph -->
-        <span class="initials">TPP</span>
-      </div>
-
-      <div class="founder-copy reveal">
-        <span class="eyebrow">Meet the Founder</span>
-        <span class="quote-mark">"</span>
-        <blockquote>Every person who walks through our door already has the answer inside them. Our job is simply to help them hear it clearly.</blockquote>
-        <div class="f-name">Founder Name</div>
-        <div class="f-role">Founder, The Purpose Project</div>
-        <p class="f-bio">With years spent listening to career stories that never quite fit a template, our founder built The Purpose Project as the space they wished existed — one where empathy comes before advice, and clarity is never rushed.</p>
-        <a href="#connect" class="btn-tpp btn-outline" style="margin-top:26px;">Talk to Us</a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<div class="root-divider" aria-hidden="true">
-  <svg viewBox="0 0 300 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M0 12h90 M115 12l10-8 10 8-10 8-10-8 M145 12h20 M170 12l10-8 10 8-10 8-10-8 M210 12h90"/></svg>
-</div>
-
-<!-- ============ LET'S CONNECT ============ -->
-<!-- <section class="connect-section" id="connect">
-  <div class="container-tpp">
-    <div class="connect-card reveal">
-
-      <div class="connect-info">
-        <span class="eyebrow">Let's Connect</span>
-        <h2 style="margin-top:14px;">Let's begin your journey.</h2>
-        <p>Tell us a little about where you are — we'll get back to you within one business day to schedule your discovery call.</p>
-
-        <div class="connect-detail">
-          <div class="row">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg>
-            hello@thepurposeproject.in
-          </div>
-          <div class="row">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3.9 3 3.4 3.4 3 4 3h3.4c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1L6.6 10.8z"/></svg>
-            +91 00000 00000
-          </div>
-          <div class="row">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-6.3 7-11.5A7 7 0 0 0 5 9.5C5 14.7 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
-            Kolkata, West Bengal, India
-          </div>
-        </div>
-      </div>
-
-      <form class="tpp-form" id="tppForm">
-        <div class="field">
-          <label for="f-name">Full Name</label>
-          <input type="text" class="form-control" id="f-name" placeholder="Your name" required>
-        </div>
-        <div class="field">
-          <label for="f-email">Email Address</label>
-          <input type="email" class="form-control" id="f-email" placeholder="you@email.com" required>
-        </div>
-        <div class="field">
-          <label for="f-phone">Phone Number</label>
-          <input type="tel" class="form-control" id="f-phone" placeholder="+91 00000 00000">
-        </div>
-        <div class="field">
-          <label for="f-msg">What brings you here?</label>
-          <textarea class="form-control" id="f-msg" placeholder="Tell us a little about your career situation..."></textarea>
-        </div>
-        <button type="submit" class="btn-tpp btn-gold">
-          Book a Discovery Call
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </button>
-        <div id="tppFormNote" class="mt-3" style="font-size:0.88rem; color:var(--gold-deep); display:none;">
-          Thank you — your message has been noted. We'll be in touch within one business day.
-        </div>
-      </form>
-
     </div>
   </div>
 </section> -->
 
-<!-- ============ FOOTER ============ -->
-<footer class="tpp-footer">
-  <div class="container-tpp">
-    <div class="footer-top">
+<div class="divider">
+  <svg viewBox="0 0 600 40" xmlns="http://www.w3.org/2000/svg">
+    <line x1="0" y1="20" x2="230" y2="20" stroke="#D9B570" stroke-width="1"/>
+    <line x1="370" y1="20" x2="600" y2="20" stroke="#D9B570" stroke-width="1"/>
+    <rect x="290" y="10" width="20" height="20" transform="rotate(45 300 20)" fill="none" stroke="#B1802E" stroke-width="1.4"/>
+    <circle cx="255" cy="20" r="2.6" fill="#B1802E"/>
+    <circle cx="345" cy="20" r="2.6" fill="#B1802E"/>
+  </svg>
+</div>
 
-      <div class="footer-brand">
-        <img src="images/logo-mark-cream.png" alt="The Purpose Project">
-        <p>A space where individuals feel understood before they are advised. Empathy first, trust before transaction, growth through clarity.</p>
-        <div class="footer-social">
-          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="0.6" fill="currentColor" stroke="none"/></svg></a>
-          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7.5 10v6.5M7.5 7.5v.01M11.5 16.5V10M11.5 12.5c0-1.4 1-2.5 2.5-2.5s2.5 1.1 2.5 2.5v4"/></svg></a>
-          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 21v-7h2.5l.5-3H14V9c0-.9.3-1.5 1.7-1.5H17V4.9c-.3 0-1.3-.1-2.4-.1-2.4 0-4.1 1.5-4.1 4.2V11H8v3h2.5v7H14z"/></svg></a>
+<section class="founder" id="founder">
+  <div class="wrap">
+    <div class="founder-photo reveal">
+      <img src="images/founder-photo.jpg" alt="Founder of The Purpose Project" />
+    </div>
+    <div class="founder-copy reveal">
+      <p class="eyebrow">Meet the Founder</p>
+      <h2>Helping people discover not just careers — but confidence.</h2>
+      <p>I didn't start The Purpose Project because I wanted to build another career coaching business. I started it because, throughout my journey in Human Resources and Training &amp; Development, I met countless individuals who were capable, hardworking, and full of potential — but simply didn't know what their next step should be.</p>
+      <p>Some lacked confidence. Some had lost direction. Some just needed someone to believe in them. Those conversations stayed with me.</p>
+      <p>I realised people don't just need career advice — they need someone who listens, understands, and helps them move forward with confidence. That's how The Purpose Project was born.</p>
+      <p>This work matters to me because I've seen what happens the moment someone finally feels understood — clarity follows almost on its own. That's what I want for everyone who walks through this door.</p>
+      <div class="pull-quote" style="margin-top:8px;">Because every career has a purpose — it just needs the right direction.</div>
+      <div class="founder-name">
+        <div class="fn">[ Founder Name ]</div>
+        <div class="ft">Founder, The Purpose Project</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="help" id="help">
+  <div class="wrap">
+    <div class="help-head">
+      <p class="eyebrow">How We Help</p>
+      <h2>We don't believe in one-size-fits-all career advice.</h2>
+      <p>Every career journey is unique, and so is our approach. Whether you're discovering your direction, preparing for opportunities, or restarting your career, we're here to guide you every step of the way.</p>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 2L14 10L12 22L10 10Z"/><circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none"/></svg></div>
+        <h4>Career Clarity Program</h4>
+        <p>Find the right direction with confidence.</p>
+        <a class="learn" href="#">Learn More <svg viewBox="0 0 20 20" fill="none" stroke="#8A5E1E" stroke-width="1.5"><path d="M4 10h12M11 5l5 5-5 5"/></svg></a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="6" y="4" width="12" height="16" rx="1"/><line x1="9" y1="9" x2="15" y2="9"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="13" y2="17"/></svg></div>
+        <h4>Resume Optimization</h4>
+        <p>Build a resume that gets noticed.</p>
+        <a class="learn" href="#">Learn More <svg viewBox="0 0 20 20" fill="none" stroke="#8A5E1E" stroke-width="1.5"><path d="M4 10h12M11 5l5 5-5 5"/></svg></a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="7" cy="7" r="2.4"/><circle cx="17" cy="7" r="2.4"/><circle cx="12" cy="18" r="2.4"/><path d="M8.7 8.7L10.5 16M15.3 8.7L13.5 16M9.4 6.5H14.6"/></svg></div>
+        <h4>LinkedIn Revamp</h4>
+        <p>Build a professional brand that attracts opportunities.</p>
+        <a class="learn" href="#">Learn More <svg viewBox="0 0 20 20" fill="none" stroke="#8A5E1E" stroke-width="1.5"><path d="M4 10h12M11 5l5 5-5 5"/></svg></a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 4C9 4 8 7 9 9C6 9 4 11 4 14C4 17.5 7 20 12 20C17 20 20 17.5 20 14C20 11 18 9 15 9C16 7 15 4 12 4Z"/><circle cx="12" cy="13" r="1.3" fill="currentColor" stroke="none"/></svg></div>
+        <h4>Career Comeback for Women</h4>
+        <p>Restart your career with confidence.</p>
+        <a class="learn" href="#">Learn More <svg viewBox="0 0 20 20" fill="none" stroke="#8A5E1E" stroke-width="1.5"><path d="M4 10h12M11 5l5 5-5 5"/></svg></a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M6 12v1a6 6 0 0012 0v-1M12 19v3M9 22h6"/></svg></div>
+        <h4>Mock Interview</h4>
+        <p>Practice with confidence. Perform with impact.</p>
+        <a class="learn" href="#">Learn More <svg viewBox="0 0 20 20" fill="none" stroke="#8A5E1E" stroke-width="1.5"><path d="M4 10h12M11 5l5 5-5 5"/></svg></a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 3L21 8L12 13L3 8Z"/><path d="M7 10.5V15C7 16.5 9 18 12 18C15 18 17 16.5 17 15V10.5"/></svg></div>
+        <h4>Campus to Corporate</h4>
+        <p>Bridge the gap between education and the workplace.</p>
+        <a class="learn" href="#">Learn More <svg viewBox="0 0 20 20" fill="none" stroke="#8A5E1E" stroke-width="1.5"><path d="M4 10h12M11 5l5 5-5 5"/></svg></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider">
+  <svg viewBox="0 0 600 40" xmlns="http://www.w3.org/2000/svg">
+    <line x1="0" y1="20" x2="230" y2="20" stroke="#D9B570" stroke-width="1"/>
+    <line x1="370" y1="20" x2="600" y2="20" stroke="#D9B570" stroke-width="1"/>
+    <circle cx="300" cy="20" r="7" fill="none" stroke="#B1802E" stroke-width="1.4"/>
+    <circle cx="255" cy="20" r="2.6" fill="#B1802E"/>
+    <circle cx="345" cy="20" r="2.6" fill="#B1802E"/>
+  </svg>
+</div>
+
+<section class="outcomes">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">The Outcome</p>
+      <h2>More than a program — it's the confidence to move forward.</h2>
+      <p>Working with The Purpose Project is more than completing a program. You'll walk away with:</p>
+    </div>
+    <div class="check-grid">
+      <div class="check-item reveal"><span class="oicon"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="10" cy="10" r="7"/><path d="M10 10L13 6"/><circle cx="10" cy="10" r="1" fill="currentColor" stroke="none"/></svg></span><span class="label">A clear career direction</span></div>
+      <div class="check-item reveal"><span class="oicon"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 10.5l3 3 7-7"/></svg></span><span class="label">Greater confidence in your decisions</span></div>
+      <div class="check-item reveal"><span class="oicon"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="5" y="3" width="10" height="14" rx="1"/><line x1="7.3" y1="7" x2="12.7" y2="7"/><line x1="7.3" y1="10" x2="12.7" y2="10"/><line x1="7.3" y1="13" x2="11" y2="13"/></svg></span><span class="label">A professionally optimized resume</span></div>
+      <div class="check-item reveal"><span class="oicon"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="6" cy="6" r="2"/><circle cx="14" cy="6" r="2"/><circle cx="10" cy="15" r="2"/><path d="M7.6 7.6L9.3 13M12.4 7.6L10.7 13"/></svg></span><span class="label">A stronger LinkedIn presence</span></div>
+      <div class="check-item reveal"><span class="oicon"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="8" y="2.5" width="4" height="8" rx="2"/><path d="M5.5 9.5v0.5a4.5 4.5 0 009 0V9.5M10 14.5v3M8 17.5h4"/></svg></span><span class="label">Interview readiness</span></div>
+      <div class="check-item reveal"><span class="oicon"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M3 14.5l4.5-2.5 4 2 5.5-3"/><circle cx="3" cy="14.5" r="1" fill="currentColor" stroke="none"/><circle cx="17" cy="10.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="label">Practical job search strategies</span></div>
+      <div class="check-item reveal"><span class="oicon"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="4"/><circle cx="10" cy="10" r="1" fill="currentColor" stroke="none"/></svg></span><span class="label">A personalised roadmap for your next career move</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonial">
+  <div class="wrap">
+    <div class="testimonial-card reveal">
+      <div class="quote-mark">"</div>
+      <p class="quote">[ LinkedIn recommendation to be placed here — a genuine client testimonial in their own words. ]</p>
+      <div class="testimonial-author">
+        <span class="li-badge"><svg viewBox="0 0 24 24" fill="#fff"><path d="M20.45 20.45h-3.56v-5.58c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.68H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 11.02-4.14 2.07 2.07 0 01-.02 4.14zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></span>
+        <div>
+          <div class="ta-name">[ Name ]</div>
+          <div class="ta-role">[ Title, Company ]</div>
         </div>
       </div>
-
-      <div class="footer-col">
-        <h6>Explore</h6>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#our-story">Our Story</a></li>
-          <li><a href="#how-we-help">How We Help</a></li>
-          <li><a href="#resources">Resources</a></li>
-          <li><a href="#founder">Meet the Founder</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h6>Services</h6>
-        <ul>
-          <li><a href="#" data-bs-toggle="modal" data-bs-target="#modal-clarity">Career Clarity Program</a></li>
-          <li><a href="#" data-bs-toggle="modal" data-bs-target="#modal-resume">ATS Resume Building</a></li>
-          <li><a href="#" data-bs-toggle="modal" data-bs-target="#modal-linkedin">LinkedIn Optimization</a></li>
-          <li><a href="#" data-bs-toggle="modal" data-bs-target="#modal-interview">Mock Interview</a></li>
-          <li><a href="#" data-bs-toggle="modal" data-bs-target="#modal-comeback">Career Comeback for Women</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h6>Contact</h6>
-        <ul>
-          <li><a href="mailto:hello@thepurposeproject.in">hello@thepurposeproject.in</a></li>
-          <li><a href="tel:+910000000000">+91 00000 00000</a></li>
-          <li><a href="#connect">Kolkata, West Bengal, India</a></li>
-        </ul>
-      </div>
-
     </div>
+  </div>
+</section>
 
-    <div class="footer-bottom">
-      <span>&copy; <span id="year"></span> The Purpose Project. All rights reserved.</span>
-      <span>Reignite. Realign. Rise.</span>
+<section class="connect" id="connect">
+  <div class="wrap">
+    <p class="eyebrow" style="justify-content:center;">Let's Connect</p>
+    <h2>Every meaningful career journey begins with a conversation.</h2>
+    <p>If you're ready to take the next step, we'd love to hear from you.</p>
+    <div class="connect-cta reveal">
+      <a class="btn btn-secondary" href="./book-a-career-conversation.html">Book a Discovery Call</a>
+      <a class="btn btn-secondary" href="#">Chat with us on WhatsApp</a>
     </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-brand">
+      <a href="./index.html"><img src="images/logo-full.png" alt="The Purpose Project" /></a>
+      <p>Reignite. Realign. Rise.</p>
+    </div>
+    <div class="foot-col">
+      <h5>Explore</h5>
+      <a href="#story">Our Story</a>
+      <a href="#help">How We Help</a>
+      <a href="#founder">Founder</a>
+    </div>
+    <div class="foot-col">
+      <h5>Services</h5>
+      <a href="#">Career Clarity</a>
+      <a href="#">Resume Optimization</a>
+      <a href="#">Mock Interview</a>
+    </div>
+    <div class="foot-col">
+      <h5>Connect</h5>
+      <a href="mailto:connect@thepurposeproject.co.in">connect@thepurposeproject.co.in</a>
+      <a href="#">Chat on WhatsApp</a>
+      <a href="./book-a-career-conversation.html">Book a Discovery Call</a>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2026 The Purpose Project. All Rights Reserved.</span>
   </div>
 </footer>
 
-<!-- Bootstrap JS -->
-<script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
