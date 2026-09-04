@@ -128,6 +128,7 @@
   .hero-copy p.support{ font-size:16px; margin-bottom:30px; max-width:500px; }
   .hero-cta{ display:flex; gap:18px; flex-wrap:wrap; margin-bottom:20px;}
   .hero-note{ font-family:'Fraunces', serif; font-style:italic; font-size:16px; color:var(--gold-deep); margin-top:8px;}
+  .hero-copy .hero-note {margin-bottom: 30px;}
 
   .hero-visual{ position:relative; display:flex; justify-content:center; align-items:center; min-height:420px; }
   .brand-emblem{
@@ -252,7 +253,7 @@
   /* ---------- Testimonial ---------- */
   .testimonial{ padding:30px 0 40px; }
   .testimonial-card{
-    max-width:760px; margin:0 auto; background:var(--card); border:1px solid var(--hairline);
+    max-width: 800px;margin:0 auto; background:var(--card); border:1px solid var(--hairline);
     border-radius:24px; padding:56px 64px; text-align:center; box-shadow:var(--shadow-card); position:relative;
   }
   .testimonial-card .quote-mark{
@@ -262,14 +263,17 @@
     font-family:'Fraunces', serif; font-style:italic; font-size:22px; line-height:1.55;
     color:var(--charcoal); margin-bottom:28px;
   }
-  .testimonial-author{ display:flex; align-items:center; justify-content:center; gap:12px; }
+  .testimonial-card .testmonialMessage p {font-size: 14.5px;margin-bottom: 15px;}
+  .testimonial-author{ display:flex; align-items:center; justify-content:center; gap:12px;padding-top: 15px;}
   .testimonial-author .li-badge{
     width:28px; height:28px; border-radius:6px; background:#0A66C2;
     display:flex; align-items:center; justify-content:center; flex:none;
   }
   .testimonial-author .li-badge svg{ width:15px; height:15px; }
-  .testimonial-author .ta-name{ font-family:'Fraunces', serif; font-size:15.5px; font-weight:600; }
-  .testimonial-author .ta-role{ font-size:12.5px; color:var(--charcoal-soft); }
+  .testimonial-author .ta-name{ font-family:'Fraunces', serif; font-size:15.5px; font-weight:600;margin-bottom: 5px;}
+  .testimonial-author .ta-role{ font-size:12.5px; color:var(--charcoal-soft);margin-bottom: 3px;}
+  .ts-avatar {display: flex;justify-content: center;padding-bottom: 6px;}
+  .ts-avatar img {width: 80px;height: 80px;object-fit: cover;border-radius: 100%;}
 
   /* ---------- Connect ---------- */
   .connect{
@@ -285,8 +289,8 @@
 
   /* ---------- Footer ---------- */
   footer{ padding:64px 0 25px; }
-  footer .wrap{ display:grid; grid-template-columns:1.2fr 0.8fr 0.8fr 1fr; gap:40px; }
-  .foot-brand img{ height:52px; width:auto; margin-bottom:14px; }
+  footer .wrap{ /*display:grid; grid-template-columns:1.2fr 0.8fr 0.8fr 1fr; */display: flex;justify-content: space-between;gap:40px; }
+  .foot-brand img{ height: 130px; width:auto; margin-bottom:14px; }
   .foot-brand p{ font-size:13px; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold-deep); font-weight:600; }
   .foot-col h5{ font-family:'Inter',sans-serif; font-size:12.5px; letter-spacing:0.14em; text-transform:uppercase; font-weight:600; color:var(--charcoal); margin-bottom:16px; }
   .foot-col a{ display:block; font-size:14.5px; color:var(--charcoal-soft); margin-bottom:12px; transition:color .25s ease; }
@@ -319,10 +323,25 @@
     .brand-emblem img{ animation:none; }
   }
 
+  .nav-social{ display:flex; }
+  .menu-toggle{ display:none; }
+  .mobile-menu{ display:none; }
+  @media (max-width:1024px){
+    footer .wrap {flex-wrap: wrap;}
+    
+  }
   @media (max-width:980px){
     .navlinks{ display:none; }
+    .nav-social{ display:none; }
+    .menu-toggle{ display:flex; }
+    .mobile-menu{
+      display:flex; flex-direction:column; max-height:0; overflow:hidden;
+      transition:max-height .45s cubic-bezier(.2,.8,.2,1);
+    }
+    .mobile-menu.is-open{ max-height:480px; }
     .hero .wrap, .story .wrap, .founder .wrap, .outcomes .wrap{ grid-template-columns:1fr; }
-    .hero-visual{ order:-1; }
+    .hero {padding: 30px 0 15px;}
+    .hero-visual{ order:-1; min-height: inherit;}
     .services-grid{ grid-template-columns:1fr 1fr; }
     .vm .grid{ grid-template-columns:1fr; }
     footer .wrap{ grid-template-columns:1fr 1fr; }
@@ -341,6 +360,14 @@
     .nav-cta .btn{ padding:11px 16px; font-size:11px; letter-spacing:0.03em; }
     .testimonial-card{ padding:40px 26px; }
     .testimonial-card p.quote{ font-size:19px; }
+    .foot-brand a {display: inline-flex;justify-content: center;}
+     footer .wrap {flex-direction: column;align-items: center;text-align: center;gap: 20px;}
+     .foot-social {justify-content: center;}
+     .ts-slider {position: relative;}
+     .ts-slider .ts-prev,
+     .ts-slider .ts-next {position: absolute;bottom: -110px;}
+     .ts-slider .ts-prev {left: 40%;}
+     .ts-slider .ts-next {right: 40%;}
   }
 
   /* ---------- Service Sub-Pages ---------- */
@@ -367,4 +394,78 @@
   .section-block > .wrap > h2{ text-align:center; font-size:30px; max-width:640px; margin:0 auto 40px; }
   @media (max-width:600px){
     .page-hero h1{ font-size:30px; }
+  }
+
+  /* ---------- Nav Social Icons ---------- */
+  .nav-social{ align-items:center; gap:12px; }
+  .social-icon{
+    width:38px; height:38px; border-radius:50%; flex:none;
+    border:1px solid var(--gold-light); background:transparent; color:var(--gold-deep);
+    display:flex; align-items:center; justify-content:center;
+    transition:background .3s ease, color .3s ease, transform .3s ease, border-color .3s ease;
+  }
+  .social-icon svg{ width:17px; height:17px; }
+  .social-icon:hover{
+    background: var(--gold-deep);
+    color:#fff; border-color:transparent;;
+  }
+
+  /* ---------- Mobile Menu Toggle ---------- */
+  .menu-toggle{
+    flex-direction:column; justify-content:center; align-items:center; gap:5px;
+    width:42px; height:42px; border:1px solid var(--hairline); border-radius:50%;
+    background:transparent; cursor:pointer; padding:0; flex:none;
+  }
+  .menu-toggle span{
+    display:block; width:18px; height:1.5px; background:var(--charcoal);
+    transition:transform .35s cubic-bezier(.2,.8,.2,1), opacity .3s ease;
+  }
+  .menu-toggle.is-open span:nth-child(1){ transform:translateY(6.5px) rotate(45deg); }
+  .menu-toggle.is-open span:nth-child(2){ opacity:0; }
+  .menu-toggle.is-open span:nth-child(3){ transform:translateY(-6.5px) rotate(-45deg); }
+
+  .mobile-menu > a{
+    padding:16px 40px; font-size:14px; letter-spacing:0.05em; text-transform:uppercase;
+    font-weight:500; color:var(--charcoal); border-bottom:1px solid var(--hairline);
+  }
+  .mobile-menu > a:hover{ color:var(--gold-deep); background:var(--card); }
+  .mobile-social{ display:flex; gap:14px; padding:20px 40px 26px; }
+
+  /* ---------- Testimonial Slider ---------- */
+  .testimonials{ padding:80px 0 30px; }
+  .ts-slider{ display:flex; align-items:center; gap:20px; max-width: 1000px; margin:0 auto; }
+  .ts-viewport{ flex:1; overflow:hidden; }
+  .ts-track{ display:flex; transition:transform .55s cubic-bezier(.2,.8,.2,1); }
+  .ts-slide{ flex:0 0 100%; max-width:100%; padding:4px; box-sizing:border-box; }
+  .ts-arrow{
+    width:46px; height:46px; border-radius:50%; flex:none; cursor:pointer;
+    border:1px solid var(--gold-light); background:var(--card); color:var(--gold-deep);
+    display:flex; align-items:center; justify-content:center;
+    transition:background .3s ease, color .3s ease, transform .3s ease;
+  }
+  .ts-arrow svg{ width:18px; height:18px; }
+  .ts-arrow:hover{
+    background:linear-gradient(135deg,var(--gold) 0%, var(--gold-deep) 100%);
+    color:#fff; transform:translateY(-2px);
+  }
+  .ts-dots{ display:flex; justify-content:center; gap:10px; margin-top:30px; }
+  .ts-dot{
+    width:8px; height:8px; border-radius:50%; border:1px solid var(--gold-light);
+    background:transparent; padding:0; cursor:pointer; transition:background .3s ease, transform .3s ease;
+  }
+  .ts-dot.is-active{ background:var(--gold); transform:scale(1.2); }
+
+  /* ---------- Footer Social ---------- */
+  .foot-social{ display:flex; gap:12px;padding-top: 10px;}
+  .foot-social a {display: inline-flex;transition: background .3s ease, color .3s ease, transform .3s ease, border-color .3s ease;}
+  .foot-social a:hover {color: #ffffff;}
+
+  @media (max-width:700px){
+    .ts-slider{ gap:10px; }
+    .ts-arrow{ width:38px; height:38px; }
+    .testimonial-card{ padding:36px 26px; }
+  }
+  @media (max-width: 480px){
+    .ts-slider .ts-prev {left: 35%;}
+    .ts-slider .ts-next {right: 35%;}
   }

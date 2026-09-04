@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>The Purpose Project — Homepage Concept</title>
+<title>The Purpose Project - Homepage Concept</title>
 <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,16 +18,30 @@
         <img src="images/logo-icon.png" alt="The Purpose Project mark" />
         <div class="brand-text"><b>THE PURPOSE</b><span>PROJECT</span></div>
     </a>
-    <div class="navlinks">
-      <a href="#story">Our Story</a>
-      <a href="#help">How We Help</a>
-      <a href="#founder">Founder</a>
-      <a href="#connect">Contact</a>
+    <div class="navlinks" id="navlinks">
+      <a href="./index.html#story">Our Story</a>
+      <a href="./index.html#help">How We Help</a>
+      <a href="./index.html#founder">Founder</a>
+      <a href="./index.html#connect">Contact</a>
     </div>
-    <div class="nav-cta">
-      <a class="btn btn-secondary" href="./book-a-career-conversation.html">Book a Discovery Call</a>
+    <div class="nav-social">
+      <a class="social-icon" href="https://www.instagram.com/the_purpose.project?igsi=Y3A2YWVzZHJoMDlv" target="_blank" rel="noopener noreferrer" aria-label="The Purpose Project on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.1" cy="6.9" r="0.9" fill="currentColor" stroke="none"/></svg></a>
+      <a class="social-icon" href="https://www.linkedin.com/in/gayatri-lashkar-7b5557208" target="_blank" rel="noopener noreferrer" aria-label="The Purpose Project on LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="8.2" cy="8.3" r="1" fill="currentColor" stroke="none"/><line x1="8.2" y1="10.9" x2="8.2" y2="16.4"/><path d="M11.6 16.4v-3.5c0-1.55 1.05-2.5 2.4-2.5s2.3 0.95 2.3 2.5v3.5"/></svg></a>
     </div>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="./index.html#story">Our Story</a>
+    <a href="./index.html#help">How We Help</a>
+    <a href="./index.html#founder">Founder</a>
+    <a href="./index.html#connect">Contact</a>
+    <div class="mobile-social">
+      <a class="social-icon" href="https://www.instagram.com/the_purpose.project?igsi=Y3A2YWVzZHJoMDlv" target="_blank" rel="noopener noreferrer" aria-label="The Purpose Project on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.1" cy="6.9" r="0.9" fill="currentColor" stroke="none"/></svg></a>
+      <a class="social-icon" href="https://www.linkedin.com/in/gayatri-lashkar-7b5557208" target="_blank" rel="noopener noreferrer" aria-label="The Purpose Project on LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="8.2" cy="8.3" r="1" fill="currentColor" stroke="none"/><line x1="8.2" y1="10.9" x2="8.2" y2="16.4"/><path d="M11.6 16.4v-3.5c0-1.55 1.05-2.5 2.4-2.5s2.3 0.95 2.3 2.5v3.5"/></svg></a>
+    </div>
+  </div>
 </header>
 
 <section class="hero">
@@ -36,19 +50,18 @@
       <p class="eyebrow">Reignite &nbsp;·&nbsp; Realign &nbsp;·&nbsp; Rise</p>
       <h1>Your journey is unique. <em>Your career should be too.</em></h1>
       <p class="lead">Whether you're choosing your first career, planning your next move, or starting again after a break, <strong>The Purpose Project</strong> helps you make informed career decisions with the right guidance and a clear direction.</p>
-      <p class="support">Pull up a chair. Let's talk about you, your journey, and what's next?</p>
       <div class="hero-cta">
         <a class="btn btn-secondary" href="./book-a-career-conversation.html">Book a Discovery Call</a>
-        <a class="btn btn-secondary" href="#connect">Chat on WhatsApp</a>
+        <!-- <a class="btn btn-secondary" href="#connect">Chat on WhatsApp</a> -->
       </div>
-      <p class="hero-note">"We're here to help you move forward — with confidence, clarity, and purpose."</p>
+      <p class="hero-note">Pull up a chair. Let's talk about you, your journey, and what's next?</p>
     </div>
     <div class="hero-visual">
       <div class="brand-emblem reveal">
-        <span class="emblem-dot" style="width:6px;height:6px; top:4%; left:18%;"></span>
+        <!-- <span class="emblem-dot" style="width:6px;height:6px; top:4%; left:18%;"></span>
         <span class="emblem-dot" style="width:4px;height:4px; top:10%; right:12%; opacity:0.7;"></span>
         <span class="emblem-diamond" style="width:9px;height:9px; bottom:8%; left:8%;"></span>
-        <span class="emblem-dot" style="width:5px;height:5px; bottom:4%; right:16%; opacity:0.8;"></span>
+        <span class="emblem-dot" style="width:5px;height:5px; bottom:4%; right:16%; opacity:0.8;"></span> -->
         <img src="images/logo-full.png" alt="The Purpose Project" />
       </div>
     </div>
@@ -150,7 +163,26 @@
     <div class="services-grid">
 
       <div class="service-card reveal">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 2L14 10L12 22L10 10Z"/><circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none"/></svg></div>
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+         <!-- Head -->
+        <circle cx="12" cy="5" r="2.2"/>
+
+        <!-- Body -->
+        <path d="M8.5 11.5C9 9.8 10 8.8 12 8.8C14 8.8 15 9.8 15.5 11.5L17 17.5"/>
+        <path d="M8.5 11.5L7 17.5"/>
+
+        <!-- Legs -->
+        <path d="M10 16L9 22"/>
+        <path d="M14 16L15 22"/>
+
+        <!-- Arm holding bag -->
+        <path d="M15 11.5L17.5 14.5L18.5 16"/>
+
+        <!-- Office / briefcase bag -->
+        <rect x="16" y="15.5" width="5" height="4" rx=".5"/>
+        <path d="M17.5 15.5V14.5C17.5 14 17.9 13.7 18.4 13.7H19.6C20.1 13.7 20.5 14 20.5 14.5V15.5"/>
+        <path d="M16 17.5H21"/>
+      </svg></div>
         <h4>Career Clarity Program</h4>
         <p>Find the right direction with confidence.</p>
         <a class="learn" href="./career-clarity-program.html">Learn More <svg viewBox="0 0 20 20" fill="none" stroke="#8A5E1E" stroke-width="1.5"><path d="M4 10h12M11 5l5 5-5 5"/></svg></a>
@@ -164,14 +196,49 @@
       </div>
 
       <div class="service-card reveal">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="7" cy="7" r="2.4"/><circle cx="17" cy="7" r="2.4"/><circle cx="12" cy="18" r="2.4"/><path d="M8.7 8.7L10.5 16M15.3 8.7L13.5 16M9.4 6.5H14.6"/></svg></div>
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+    <path d="M6 9V18"/>
+    <path d="M6 6.5V6.6"/>
+    <path d="M10 18V9"/>
+    <path d="M10 12.8C10 10.6 11.4 9 13.7 9C16 9 17.5 10.5 17.5 13.2V18"/>
+    <path d="M10 13V18"/>
+    <circle cx="6" cy="6" r="1" fill="currentColor" stroke="none"/>
+</svg></div>
         <h4>LinkedIn Revamp</h4>
         <p>Build a professional brand that attracts opportunities.</p>
         <a class="learn" href="./linkedin-revamp.html">Learn More <svg viewBox="0 0 20 20" fill="none" stroke="#8A5E1E" stroke-width="1.5"><path d="M4 10h12M11 5l5 5-5 5"/></svg></a>
       </div>
 
       <div class="service-card reveal">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 4C9 4 8 7 9 9C6 9 4 11 4 14C4 17.5 7 20 12 20C17 20 20 17.5 20 14C20 11 18 9 15 9C16 7 15 4 12 4Z"/><circle cx="12" cy="13" r="1.3" fill="currentColor" stroke="none"/></svg></div>
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+            <!-- Head -->
+            <circle cx="11" cy="5" r="2.1"/>
+
+            <!-- Hair -->
+            <path d="M9.2 4.2C9.5 2.9 10.4 2.3 11.5 2.6C12.5 2.8 13.1 3.6 13 4.6"/>
+
+            <!-- Body -->
+            <path d="M7.5 11.5C8 9.7 9.2 8.7 11 8.7C12.8 8.7 14 9.7 14.5 11.5L15.5 16.5"/>
+            <path d="M7.5 11.5L6.5 16.5"/>
+
+            <!-- Arms -->
+            <path d="M14 11L16.5 13.5L18 12"/>
+            <path d="M7.5 11.5L6 14"/>
+
+            <!-- Skirt / lower body -->
+            <path d="M9 15.5L7.5 21.5H14.5L13 15.5"/>
+
+            <!-- Briefcase -->
+            <rect x="15.5" y="13" width="5" height="4" rx=".5"/>
+            <path d="M17 13V12C17 11.5 17.4 11.2 17.9 11.2H19.1C19.6 11.2 20 11.5 20 12V13"/>
+
+            <!-- Comeback / upward arrow -->
+            <path d="M16.5 19.5C18.5 21 21 20 21.5 18"/>
+            <path d="M21.5 18V20.2"/>
+            <path d="M21.5 18H19.3"/>
+          </svg>
+        </div>
         <h4>Career Comeback for Women</h4>
         <p>Restart your career with confidence.</p>
         <a class="learn" href="./career-comeback-for-women.html">Learn More <svg viewBox="0 0 20 20" fill="none" stroke="#8A5E1E" stroke-width="1.5"><path d="M4 10h12M11 5l5 5-5 5"/></svg></a>
@@ -205,40 +272,65 @@
   </svg>
 </div>
 
-<section class="outcomes">
+<!-- Dummy testimonials — replace with real client testimonials when available -->
+<section class="testimonials" id="testimonials">
   <div class="wrap">
-    <div>
-      <p class="eyebrow">The Outcome</p>
-      <h2>More than a program — it's the confidence to move forward.</h2>
-      <p>Working with The Purpose Project is more than completing a program. You'll walk away with:</p>
+    <p class="eyebrow" style="justify-content:center;">What People Say</p>
+    <h2 style="text-align:center; font-size:32px; margin-bottom:40px;">Real stories. Real breakthroughs.</h2>
+    <div class="ts-slider">
+      <button class="ts-arrow ts-prev" id="tsPrev" type="button" aria-label="Previous testimonial">
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 4l-6 6 6 6"/></svg>
+      </button>
+      <div class="ts-viewport">
+        <div class="ts-track" id="tsTrack">
+          <div class="ts-slide">
+            <div class="testimonial-card">
+              <div class="quote-mark">"</div>
+              <div class="testmonialMessage">
+                <p>I would personally recommend her to anyone looking for the right guidance in their career. She has helped me not only with important career decisions but also in understanding my strengths and making confident choices about my future.</p>
+                <p>She even guided me in creating and improving my LinkedIn profile, which was a great learning experience for me. What I truly appreciate is the way she listens, understands, and gives practical guidance with genuine care.</p>
+                <p>Her guidance has made me more confident about my career and the decisions I take. I’m genuinely grateful for her support and would highly recommend her to anyone seeking meaningful career guidance and direction.</p>
+                <p><strong>Absolutely Thanks</strong></p>
+              </div>
+              <div class="testimonial-author">
+                <div>
+                  <div class="ts-avatar"><img src="./images/avatar1.webp" alt="Akmal Sayyed"></div>
+                  <div class="ta-name">Akmal Sayyed</div>
+                  <div class="ta-role">Branch Operations Manager</div>
+                  <div class="ta-role">CSB Bank</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ts-slide">
+            <div class="testimonial-card">
+              <div class="quote-mark">"</div>
+              <div class="testmonialMessage">
+                <p>I consulted Gayatri Ma'am for a review of my LinkedIn profile and resume. Her insights on structuring the About section and highlighting technical skills were practical and effective. Shortly after implementing the changes, my profile engagement saw a significant uptick. She is very approachable and gives clear, actionable feedback for students looking to improve their digital presence.</p>
+                <p><strong>Best Regards</strong></p>
+              </div>
+              <div class="testimonial-author">
+                <div>
+                  <div class="ts-avatar"><img src="./images/avatar2.webp" alt="Soham Kalgutkar"></div>
+                  <div class="ta-name">Soham Kalgutkar </div>
+                  <div class="ta-role">AI/ML Researcher | Full Stack Developver</div>
+                  <div class="ta-role">Final Year Engineering Student.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="ts-arrow ts-next" id="tsNext" type="button" aria-label="Next testimonial">
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 4l6 6-6 6"/></svg>
+      </button>
     </div>
-    <div class="check-grid">
-      <div class="check-item reveal"><span class="oicon"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="10" cy="10" r="7"/><path d="M10 10L13 6"/><circle cx="10" cy="10" r="1" fill="currentColor" stroke="none"/></svg></span><span class="label">A clear career direction</span></div>
-      <div class="check-item reveal"><span class="oicon"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 10.5l3 3 7-7"/></svg></span><span class="label">Greater confidence in your decisions</span></div>
-      <div class="check-item reveal"><span class="oicon"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="5" y="3" width="10" height="14" rx="1"/><line x1="7.3" y1="7" x2="12.7" y2="7"/><line x1="7.3" y1="10" x2="12.7" y2="10"/><line x1="7.3" y1="13" x2="11" y2="13"/></svg></span><span class="label">A professionally optimized resume</span></div>
-      <div class="check-item reveal"><span class="oicon"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="6" cy="6" r="2"/><circle cx="14" cy="6" r="2"/><circle cx="10" cy="15" r="2"/><path d="M7.6 7.6L9.3 13M12.4 7.6L10.7 13"/></svg></span><span class="label">A stronger LinkedIn presence</span></div>
-      <div class="check-item reveal"><span class="oicon"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="8" y="2.5" width="4" height="8" rx="2"/><path d="M5.5 9.5v0.5a4.5 4.5 0 009 0V9.5M10 14.5v3M8 17.5h4"/></svg></span><span class="label">Interview readiness</span></div>
-      <div class="check-item reveal"><span class="oicon"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M3 14.5l4.5-2.5 4 2 5.5-3"/><circle cx="3" cy="14.5" r="1" fill="currentColor" stroke="none"/><circle cx="17" cy="10.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="label">Practical job search strategies</span></div>
-      <div class="check-item reveal"><span class="oicon"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="4"/><circle cx="10" cy="10" r="1" fill="currentColor" stroke="none"/></svg></span><span class="label">A personalised roadmap for your next career move</span></div>
+    <div class="ts-dots" id="tsDots">
+      <button class="ts-dot is-active" type="button" data-index="0" aria-label="Testimonial 1"></button>
+      <button class="ts-dot" type="button" data-index="1" aria-label="Testimonial 2"></button>
     </div>
   </div>
 </section>
-
-<!-- <section class="testimonial">
-  <div class="wrap">
-    <div class="testimonial-card reveal">
-      <div class="quote-mark">"</div>
-      <p class="quote">[ LinkedIn recommendation to be placed here — a genuine client testimonial in their own words. ]</p>
-      <div class="testimonial-author">
-        <span class="li-badge"><svg viewBox="0 0 24 24" fill="#fff"><path d="M20.45 20.45h-3.56v-5.58c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.68H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 11.02-4.14 2.07 2.07 0 01-.02 4.14zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></span>
-        <div>
-          <div class="ta-name">[ Name ]</div>
-          <div class="ta-role">[ Title, Company ]</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
 
 <section class="connect" id="connect">
   <div class="wrap">
@@ -247,7 +339,7 @@
     <p>If you're ready to take the next step, we'd love to hear from you.</p>
     <div class="connect-cta reveal">
       <a class="btn btn-secondary" href="./book-a-career-conversation.html">Book a Discovery Call</a>
-      <a class="btn btn-secondary" href="#">Chat with us on WhatsApp</a>
+      <!-- <a class="btn btn-secondary" href="#">Chat with us on WhatsApp</a> -->
     </div>
   </div>
 </section>
@@ -257,7 +349,6 @@
     <div class="foot-brand">
       <a href="./index.html"><img src="images/logo-full.png" alt="The Purpose Project" /></a>
       <p>Reignite. Realign. Rise.</p>
-      <span>103 Manorama CHS,<br>Near Karve Hospital,<br>Hindu Colony,<br>Naupada Thane west 400602 </span>
     </div>
     <div class="foot-col">
       <h5>Explore</h5>
@@ -267,15 +358,22 @@
     </div>
     <div class="foot-col">
       <h5>Services</h5>
-      <a href="./career-clarity-program.html">Career Clarity</a>
+      <a href="./career-clarity-program.html">Career Clarity Program</a>
       <a href="./resume-optimization.html">Resume Optimization</a>
+      <a href="./linkedin-revamp.html">LinkedIn Revamp</a>
+      <a href="./career-comeback-for-women.html">Career Comeback for Women</a>
       <a href="./mock-interview.html">Mock Interview</a>
+      <a href="./campus-to-corporate.html">Campus to Corporate</a>
     </div>
     <div class="foot-col">
       <h5>Connect</h5>
-      <a href="mailto:gayatri@thepurposeproject.co.in">gayatri@thepurposeproject.co.in</a>
-      <a href="#">Chat on WhatsApp</a>
+      <a href="mailto:contactus.thepurposeproject@gmail.com">contactus.thepurposeproject@gmail.com</a>
+      <!-- <a href="#">Chat on WhatsApp</a> -->
       <a href="./book-a-career-conversation.html">Book a Discovery Call</a>
+      <div class="foot-social">
+        <a class="social-icon" href="https://www.instagram.com/the_purpose.project?igsi=Y3A2YWVzZHJoMDlv" target="_blank" rel="noopener noreferrer" aria-label="The Purpose Project on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.1" cy="6.9" r="0.9" fill="currentColor" stroke="none"/></svg></a>
+        <a class="social-icon" href="https://www.linkedin.com/in/gayatri-lashkar-7b5557208" target="_blank" rel="noopener noreferrer" aria-label="The Purpose Project on LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="8.2" cy="8.3" r="1" fill="currentColor" stroke="none"/><line x1="8.2" y1="10.9" x2="8.2" y2="16.4"/><path d="M11.6 16.4v-3.5c0-1.55 1.05-2.5 2.4-2.5s2.3 0.95 2.3 2.5v3.5"/></svg></a>
+      </div>
     </div>
   </div>
   <div class="foot-bottom">
