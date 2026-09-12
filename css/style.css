@@ -253,7 +253,7 @@
   /* ---------- Testimonial ---------- */
   .testimonial{ padding:30px 0 40px; }
   .testimonial-card{
-    max-width: 800px;margin:0 auto; background:var(--card); border:1px solid var(--hairline);
+    max-width: 700px;margin:0 auto; background:var(--card); border:1px solid var(--hairline);
     border-radius:24px; padding:56px 64px; text-align:center; box-shadow:var(--shadow-card); position:relative;
   }
   .testimonial-card .quote-mark{
@@ -326,6 +326,9 @@
   .nav-social{ display:flex; }
   .menu-toggle{ display:none; }
   .mobile-menu{ display:none; }
+
+.divider.divider-middle {margin-top: 40px;}
+
   @media (max-width:1024px){
     footer .wrap {flex-wrap: wrap;}
     
@@ -433,7 +436,7 @@
 
   /* ---------- Testimonial Slider ---------- */
   .testimonials{ padding:80px 0 30px; }
-  .ts-slider{ display:flex; align-items:center; gap:20px; max-width: 1000px; margin:0 auto; }
+  .ts-slider{ display:flex; align-items:center; gap:20px; max-width: 900px; margin:0 auto; }
   .ts-viewport{ flex:1; overflow:hidden; }
   .ts-track{ display:flex; transition:transform .55s cubic-bezier(.2,.8,.2,1); }
   .ts-slide{ flex:0 0 100%; max-width:100%; padding:4px; box-sizing:border-box; }
